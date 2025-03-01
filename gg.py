@@ -67,7 +67,7 @@ def Tele(ccx):
 }
 
     response = r.post('https://sarasetzerfeltworks.com/my-account/', headers=headers)
-    time.sleep(8)
+
     try:
         register = re.search(r'name="woocommerce-register-nonce" value="(.*?)"', response.text).group(1)
     except:
@@ -119,7 +119,7 @@ def Tele(ccx):
     response = r.post('https://sarasetzerfeltworks.com/my-account/', headers=headers, data=data)
 
 			
-    time.sleep(5)
+
     headers = {
 				'content-type': 'application/x-www-form-urlencoded',
 				'user-agent': user,
